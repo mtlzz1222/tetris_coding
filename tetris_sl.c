@@ -106,14 +106,12 @@ void start_game()
             if(hit_bottom(n,space_c,x,y+1)==1)
             {   draw_kong(n,space_c,x,y);
                 y++;            //ÏòÏÂ½µÂä
-                gotoxy(2,0);
-                printf("%d",y);
             }
             else
             {
-                for(i=0;i<4;i++)
+                for(j=0;j<4;j++)
                 {
-                    for(j=0;j<4;j++)
+                    for(i=0;i<4;i++)
                     {
                         if(dia[n][space_c].space[i][j]==1)
                         {   
